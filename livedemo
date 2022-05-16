@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "name": "customer-live-demo",
+    "namespace": null,
+    "labels": {},
+    "annotations": {},
+    "description": "customer live demo site",
+    "disable": null
+  },
+  "spec": {
+    "domains": [
+      "app.user.com"
+    ],
+    "https": {
+      "http_redirect": null,
+      "add_hsts": null,
+      "tls_parameters": null,
+      "default_header": {},
+      "enable_path_normalize": {},
+      "port": 443
+    },
+    "advertise_on_public_default_vip": {},
+    "default_route_pools": [
+      {
+        "pool": {
+          "tenant": "f5-amer-ent-qyyfhhfj",
+          "namespace": "m-neal",
+          "name": "m-neal-user-com"
+        },
+        "weight": 1,
+        "priority": 1,
+        "endpoint_subsets": {}
+      }
+    ],
+    "routes": null,
+    "cors_policy": null,
+    "app_firewall": {
+      "tenant": "f5-amer-ent-qyyfhhfj",
+      "namespace": "shared",
+      "name": "default"
+    },
+    "add_location": null,
+    "no_challenge": {},
+    "more_option": null,
+    "user_id_client_ip": {},
+    "disable_rate_limit": {},
+    "malicious_user_mitigation": null,
+    "waf_exclusion_rules": null,
+    "data_guard_rules": null,
+    "blocked_clients": null,
+    "trusted_clients": null,
+    "ddos_mitigation_rules": null,
+    "service_policies_from_namespace": {},
+    "round_robin": {},
+    "multi_lb_app": {},
+    "disable_bot_defense": {},
+    "disable_api_definition": {},
+    "disable_ip_reputation": {}
+  }
+}
